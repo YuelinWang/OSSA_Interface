@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*头部*/
+
+
+/*底板*/
+
+.headerBackground {
+    background: rgb(221, 221, 221);
+    width: 1240px;
+    height: 60px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: fixed;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+/*文字*/
+
+.header {
+    width: 1240px;
+    height: 60px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: grid;
+    grid: auto/30% 70%;
+    z-index: 20;
+    justify-items: end;
+    align-items: center;
+}
+
+
+/*图标*/
+
+.headerLeft {
+    grid-column: 1;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+
+/*超链接*/
+
+.headerRight {
+    grid-column: 2;
+}
+
+
+/*按钮*/
+
+button {
+    width: 75px;
+    height: 30px;
+    border-width: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    font-family: Microsoft YaHei;
+    color: black;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+
+/* 鼠标移入按钮范围时改变颜色 */
+
+button:hover {
+    background: rgb(200, 200, 200);
+}
+
+
+/*图片*/
+
+.headimg {
+    width: 100%;
+    min-width: 1240px;
+    height: 400px
+}
+
+
+/*
+.backimg {
+    background: url(../img/background.jpg);
+    height: 400px;
+    width: 100%;
+    background-position: center;
+}
+*/
+
+
+/*过渡*/
+
+.transition {
+    height: 20px;
+    width: 100%;
+    background: #ffffff;
+}
+
+
+/*主体*/
+
+.body {
+    width: 1240px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+
+/*公告*/
+
+.announcement {
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid: auto/400px auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.anBackImg {
+    border-radius: 25px;
+    height: 400px;
+    width: 400px;
+    grid-column: 1;
+}
+
+.antext {
+    border-radius: 25px;
+    background: red;
+    grid-column: 2;
+}
+
+
+/*返回顶部*/
+
+.back {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: red;
+}
+
+
+/*返回顶部*/
+
+.hide {
+    display: none;
+}
